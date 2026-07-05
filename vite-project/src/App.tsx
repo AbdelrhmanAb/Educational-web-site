@@ -1,25 +1,31 @@
 import './App.css'
 
 import { Routes, Route } from 'react-router-dom'
-import Home1 from './pages/home/home1'
 import MainLayout from './MainLayout'
-import Page404 from './pages/404'
-import AboutPage from './pages/about'
-import Instructors from './pages/instructor'
-import ProfilePage from './pages/profile'
-import LogIn from './pages/logIn'
-import SignUp from './pages/signUp'
-import EventsPage from './pages/events/events'
-import SingleEvent from './pages/events/SingleEvent'
-import EventSidebarPage from './pages/events/eventSidebar'
-import CoursesPage from './pages/courses/CoursesPage'
-import SingleCoursePage from './pages/courses/SingleCourse'
-import CoursesList from './pages/courses/coursesList'
-import CoursesSidbar from './pages/courses/coursesSidbar'
-import ContactPage from './pages/ContactPage'
-import BlogPage from './pages/blog/Blog'
-import SingleBlog from './pages/blog/SingleBlog'
+import React from 'react';
 
+const Home1 = React.lazy(() => import('./pages/home/home1'));
+const AboutPage = React.lazy(() => import('./pages/about'));
+const Instructors = React.lazy(() => import('./pages/instructor'));
+const ProfilePage = React.lazy(() => import('./pages/profile'));
+const LogIn = React.lazy(() => import('./pages/logIn'));
+const SignUp = React.lazy(() => import('./pages/signUp'));
+
+const EventsPage = React.lazy(() => import('./pages/events/events'));
+const SingleEvent = React.lazy(() => import('./pages/events/SingleEvent'));
+const EventSidebarPage = React.lazy(() => import('./pages/events/eventSidebar'));
+
+const CoursesPage = React.lazy(() => import('./pages/courses/CoursesPage'));
+const SingleCoursePage = React.lazy(() => import('./pages/courses/SingleCourse'));
+const CoursesList = React.lazy(() => import('./pages/courses/coursesList'));
+const CoursesSidbar = React.lazy(() => import('./pages/courses/coursesSidbar'));
+
+const ContactPage = React.lazy(() => import('./pages/ContactPage'));
+
+const BlogPage = React.lazy(() => import('./pages/blog/Blog'));
+const SingleBlog = React.lazy(() => import('./pages/blog/SingleBlog'));
+
+const Page404 = React.lazy(() => import('./pages/404'));
 const App = () => {
 
 
